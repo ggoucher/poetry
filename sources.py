@@ -44,6 +44,7 @@ class Sources:
 
     """
     source_info = []
+    poem_lengths = []
 
     def __init__(self, poem):
         self.poem = poem
@@ -51,6 +52,10 @@ class Sources:
             words_to_add = line.lower().split()
             for word in words_to_add:
                 self.source_info.append(word)
+        self.poem_lengths.append(poem.length)
 
     def get_source_info(self):
         return self.source_info
+
+    def get_poem_length(self):
+        return self.poem_lengths

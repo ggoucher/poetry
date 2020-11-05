@@ -12,8 +12,9 @@ def main():
     # dickinson_rnn.map_words()
     # dickinson_rnn.create_prediction()
 
-    dickinson_nltk = Text_NGRAM(Sources.get_source_info(Sources), 3)
-
+    dickinson_nltk = Text_NGRAM(Sources.get_source_info(Sources), 3, Sources.get_poem_length(Sources))
+    synonym = dickinson_nltk.generate_first_term("exiting")
+    print(dickinson_nltk.generate_poem(synonym[0], synonym[1]))
 
 
 if __name__ == "__main__":
