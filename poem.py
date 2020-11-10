@@ -1,18 +1,16 @@
 
-
 class Poem:
     """
     A class representing our poem sources from Emily Dickinson!
 
     Attributes
     ----------
-    title: a poem's title
-    lines: a list of the lines in a poem
-    length: the line length of a poem
-
-
-    Methods
-    -------
+    title : string
+        a poem's title
+    lines : list
+        a list of the lines in a poem
+    length : int
+        the line length of a poem
 
     """
 
