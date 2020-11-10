@@ -20,6 +20,7 @@ def tf_idf_poems(poems):
 
     for i in range(len(poem_scores)):  # standardizes our scores across sizes
         poem_scores[i] /= len(poems[i].split())
+        print(poem_scores[i])
 
     return poems[poem_scores.index(max(poem_scores))]  # returns the document with the relative highest tf-idf value
 
